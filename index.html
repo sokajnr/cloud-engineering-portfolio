@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Andrew Odeyemi's cloud engineering and cybersecurity portfolio featuring hands-on AWS projects, Amazon S3, IAM, and AWS Amplify.">
+  <meta name="description" content="Andrew Odeyemi's cloud engineering and cybersecurity portfolio featuring hands-on AWS projects, Amazon S3, IAM security testing, and AWS Amplify.">
   <title>Andrew Odeyemi | Cloud Engineering & Security</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,30 +35,49 @@
 
       <!-- PROJECT 1: AWS CLOUD SECURITY LAB -->
       <article>
-        <p class="eyebrow">AWS Security | Infrastructure Configured</p>
+        <p class="eyebrow">AWS Security | IAM Testing Completed</p>
         <h3>AWS Cloud Security Lab — Amazon S3 & IAM</h3>
 
         <p>
-          Designed and configured a private Amazon S3 bucket with
-          public access blocking, disabled ACLs, and server-side
-          encryption using SSE-S3.
+          Designed and configured a private Amazon S3 bucket
+          with Block Public Access enabled, disabled ACLs,
+          and server-side encryption using SSE-S3.
         </p>
 
         <p>
-          Developed a custom IAM read-only policy following the
-          principle of least privilege and created an IAM role
-          trusted by Amazon EC2.
+          Developed a custom IAM read-only policy following
+          the principle of least privilege and created an
+          Amazon EC2-trusted IAM role with permissions
+          restricted to a designated S3 bucket.
+        </p>
+
+        <p>
+          <strong>Security Validation:</strong>
+          Completed four AWS IAM Policy Simulator tests.
+          ListBucket and GetObject returned Allowed,
+          while PutObject and DeleteObject returned Denied,
+          matching the expected permission behavior.
+        </p>
+
+        <p>
+          <strong>Testing Scope:</strong>
+          Preliminary IAM simulation completed.
+          Bucket-specific authorization and live EC2
+          workload access have not yet been verified.
+          An AWS Organizations SCP restriction was
+          also observed during testing.
         </p>
 
         <p>
           <strong>Technologies:</strong>
           Amazon S3, AWS IAM, IAM Roles, IAM Policies,
-          JSON, Cloud Security
+          IAM Policy Simulator, JSON, Cloud Security
         </p>
 
         <p>
           <strong>Status:</strong>
-          Infrastructure configured. Security permission testing pending.
+          Infrastructure configured and four preliminary
+          IAM security tests completed. Runtime validation pending.
         </p>
 
         <a
